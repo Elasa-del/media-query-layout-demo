@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.BG {
+  background-color: rgb(76, 51, 17);
+  text-align: center;
+  color: bisque;
+}
+
+header h1 {
+  padding: 10px 0;
+}
+
+.paragraph {
+  margin: 2%;
+}
+.firstP {
+  background-image: url("../puppy-image/puppy-1.jpg");
+}
+.secondP {
+  background-image: url("../puppy-image/puppy-2.jpg");
+}
+.all-img div {
+  height: 360px;
+  width: 460px;
+  background-size: cover;
+  margin: 5% auto;
+}
+
+footer h2 {
+  padding: 15px 0;
+}
+
+@media (min-width: 720px) {
+  .secondP {
+    background-image: url("../puppy-image/puppy-3.jpg");
+  }
+  .hidden-paragraph {
+    display: none;
+  }
+  .paragraph-wrapper {
+    display: flex;
+  }
+
+  .all-img {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .all-img .firstP {
+    margin-right: 15px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .hidden-paragraph {
+    display: block;
+  }
+  .paragraph {
+    background-color: rgb(172, 119, 53);
+  }
+  .all-img {
+    width: 920px;
+  }
+  .all-img .firstP {
+    margin-right: 60px;
+  }
+  .paragraph-wrapper {
+    width: 920px;
+    margin: 0 auto;
+  }
+}
